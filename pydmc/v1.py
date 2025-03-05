@@ -1,6 +1,7 @@
 from typing import Dict, List, Union
 
 import requests
+
 from pydmc.exceptions import AuthException, IICSException
 
 

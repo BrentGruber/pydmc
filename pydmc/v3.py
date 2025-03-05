@@ -2,6 +2,7 @@ import logging
 from typing import Any, Dict, List, Union
 
 import requests
+
 from pydmc.exceptions import AuthException, IICSException, NotFoundError
 
 logger = logging.getLogger(__name__)

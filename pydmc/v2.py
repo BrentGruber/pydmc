@@ -1,6 +1,7 @@
 from typing import Dict, List, Union
 
 import requests
+
 from pydmc.exceptions import AuthException, IICSException
 
 
@@ -274,7 +275,7 @@ class IICSV2Client:
     def get_connection_by_name(self, connection) -> Dict:
         """
         Get a single connection by name
-    
+
         :param connection: name of the connection to get details for
         :type connection: str
         :return: a dictionary containing the connection details
@@ -294,6 +295,7 @@ class IICSV2Client:
         """
         r = self._request("GET", f"/api/v2/connection/test/{id}")
         return r.json()
+
 
 #    def get_activity_log(self):
 #        """
