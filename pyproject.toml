@@ -1,0 +1,15 @@
+[project]
+name = "pydmc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.4",
+    "requests>=2.32.3",
+    "isort>=6.0.0",
+    "black>=25.1.0",
+    "flake8>=7.1.2",
+    "pytest-mock>=3.14.0",
+]
