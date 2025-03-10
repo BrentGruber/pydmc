@@ -62,9 +62,9 @@ class IICSV3Client:
 
         json_response = r.json()
 
-        self.base_url = json_response.get("serverUrl")
-        self.session_id = json_response.get("icSessionId")
-        self.orgId = json_response.get("orgId")
+        self.base_url = json_response.get("products")[0].get("baseApiUrl")
+        self.session_id = json_response.get("userInfo").get("sessionId")
+        self.orgId = json_response.get("userInfo").get("orgId")
 
     def _init_session(self):
         """
